@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "postgres",
-    "database": "ProyectoFinal",
-    "host": "192.168.100.132",
+    "username": "neondb_owner",
+    "password": "npg_deB10iLIYAjK",
+    "database": "neondb",
+    "host": "ep-bitter-pine-acl6onft-pooler.sa-east-1.aws.neon.tech",
     "dialect": "postgres"
   }
 }
