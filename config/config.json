@@ -4,6 +4,12 @@
     "password": "npg_deB10iLIYAjK",
     "database": "neondb",
     "host": "ep-bitter-pine-acl6onft-pooler.sa-east-1.aws.neon.tech",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
   }
 }
