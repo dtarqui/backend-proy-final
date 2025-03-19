@@ -12,7 +12,7 @@ const authenticate = require("./middleware/auth");
 
 app.use(
   cors({
-    origin: "http://localhost:3005",
+    origin: "https://frontend-proy-final.onrender.com",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true,
   })
