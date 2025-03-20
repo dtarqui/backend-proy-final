@@ -15,7 +15,7 @@ const authenticate = require("./middleware/auth");
 
 app.use(
   cors({
-    origin: "http://localhost:3005",
+    origin: process.env.FRONTEND_URL || "http://localhost:3005",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true,
   })
