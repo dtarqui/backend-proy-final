@@ -5,6 +5,7 @@ exports.register = async (req, res) => {
   const { username, name, email, password } = req.body;
   try {
     const user = await User.create({ username, name, email, password });
+    user.password = undefined;
     res.status(201).json({ message: "Usuario registrado exitosamente", user });
   } catch (error) {
     res.status(400).json({ message: "Error al registrar usuario", error });
@@ -30,6 +31,7 @@ exports.login = async (req, res) => {
 exports.getMe = async (req, res) => {
   try {
     const user = await User.findByPk(req.user.id);
+    user.password = undefined;
     res.json(user);
   } catch (error) {
     res
